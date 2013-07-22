@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Alex Davidow for Launch Academy</title>
-        <body>
-           <h1>Alex Davidow</h1> 
-          <h3> A 26-year-old past and future entrepreneur with a love for creativity, outdoor physical activity and carbs. </h3>
-           <img src="https://sphotos-a.xx.fbcdn.net/hphotos-snc6/200585_515791013566_2564_n.jpg"/>
-           <p> My favorite activities are playing soccer, surfing and snowboarding. See a picture of me surfing in Palm Beach above and attempting a backflip on a snowboard at the bottom of the page. </p>
-          <p> My favorite website is probably <a href="http://espn.go.com">espn.com</a>. That's at least the site I visit most often. I also like <a href="https://www.surfline.com">surfline.com</a> and <a href="http://www.retailmenot.com">retailmenot.com</a> is great for online shopping discounts. </p>
-           <p>This is going to be a portfolio showcasing my development and coding skills. Right now I have little to nothing to boast about.</p>
-          <img src="https://sphotos-b.xx.fbcdn.net/hphotos-ash4/264661_10100122731651636_5903838_n.jpg"/> 
-        </body>
-    </head>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/ui-lightness/jquery-ui-1.10.3.custom.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/layout.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/base.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <script type="text/javascript" src="javascripts/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui-1.10.3.custom.min.js"></script>
+  <script type="text/javascript" src="javascripts/portfolio.js"></script>
+
+  <title>Alex Davidow</title>
+</head>
+<body>
+  <section id="bg_image"> 
+    <div id="name">ALEX DAVIDOW</div>
+    <nav>
+      <button id="about_nav" class="nav_buttons"><i>About</i></button>      
+      <button id="portfolio_nav" class="nav_buttons"><i>Portfolio</i></button>
+    </nav>    
+
+    <article class="intro">
+      I'm a full-stack developer focusing on Ruby on Rails, Javascript, jQuery, CSS3 and HTML5. Before diving into web development, I studied and practiced entrepreneurship and finance. When I can get away from the computer, I enjoy surfing, playing soccer and eating pasta (in no particular order). As Joe Walsh said, "I can't complain, but sometimes I still do."
+    </article>
+    <section id="portfolios">
+      <section id="port_1" class="hidden">
+        <h5>Cupcake Builder Game</h5>
+        <img id="cupcake_screenshot" class="row"/><br>
+      </section><br>  
+      <div id="dialog_cupcake" title="Falling Cupcakes Game" style="font-family:'Fauna One', serif;">
+        A game where a user must click on specific cupcake elements cascading down the screen. The elements are: a base, ice cream, frosting and topping. When one of each element is chosen, the cupcake is complete, as is the game. If a user clicks on more than one of the same element, they lose a cupcake life. Lose three lives and the game is over. Created with a lot of Javascript and jQuery.
+        <br><a href="https://github.com/belcortes/cupcake_game" target="_blank" id="cupcake_link">
+          View this project on Github
+        </a>
+      </div>
+      <section id="port_2" class="hidden">
+        <h5>Trip Planner for World Cup 2014</h5>
+        <img id="worldcup_screenshot" class="row"/>
+      </section><br>
+      <div id="dialog_worldcup" title="World Cup 2014 Planner" style="font-family:'Fauna One', serif;">
+        A Ruby on Rails application for the 2014 World Cup in Brazil. Users can view the complete game schedule and view detailed inforomation about host cities and stadiums. The app also includes a basic trip planner to allow a user to see games and locations for specific dates.
+        <br><a href="https://github.com/belcortes/worldcupapp" target="_blank" id="worldcup_link">
+          View this project on Github
+        </a>
+      </div>
+    </section>
+    <section id="contact">
+      Email me:
+      alex(dot)davidow(at)gmail(dot)com
+      <br>
+      <a href="https://www.linkedin.com/in/alexdavidow/" target="_blank" class="icons"><i class="icon-linkedin-sign icons"></i></a>
+      <a href="https://github.com/alexdavidow" target="_blank" class="icons"><i class="icon-github-sign icons"></i></a>
+    </section>    
+  </section>
+    <!-- <img id='big-image' /> -->
+</body>
 </html>
-
-
-
-
-
-
-
