@@ -92,6 +92,9 @@ h5 {
   text-decoration: none;
   color: white;
 }
+.icons:hover {
+  color: #91908e;
+}
 
 .ui-dialog-title {
   color: #2b507a;
