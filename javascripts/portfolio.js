@@ -22,8 +22,10 @@ function about(){
 // }
 
 $(document).ready(function(){
+  $('#ouac_screenshot').attr('src', "images/ouac-screenshot.png");  
   $('#cupcake_screenshot').attr('src', "images/cupcakegame_screenshot.png");
   $('#worldcup_screenshot').attr('src', "images/worldcupapp_screenshot.png");
+  $('#simplechat_screenshot').attr('src', "images/simplechat_screenshot.png");
   
   $('.hidden').hide();
   
