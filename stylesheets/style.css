@@ -31,6 +31,15 @@ h5 {
   left: 110px;
   top: 230px;
 }
+#original{
+  font-size: 15px;
+  color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  left: 110px;
+  top: 230px;
+}
 
 #port_1 {
   height: 240px;
@@ -47,17 +56,35 @@ h5 {
   height: 240px;
   position: absolute;
   top: 20px;
-  left: 800px;
+  left: 850px;
 }
 #cupcake_screenshot {
   width: 308px;
   height: 210px;
 }
 
+#port_3 {
+  height: 240px;
+  position: absolute;
+  top: 20px;
+  left: 450px;
+}
 #worldcup_screenshot {
   width: 308px;
   height: 210px;
 }
+
+#port_4 {
+  height: 240px;
+  position: absolute;
+  top: 20px;
+  left: 850px;
+}
+#simplechat_screenshot {
+  width: 308px;
+  height: 210px;
+}
+
 
 
 #bg_image {

@@ -1,25 +1,35 @@
 function show_port1(){
   $('.intro').hide("scale", 800);
+  $('#original').hide();
   $('#port_1').fadeIn(1100);
   $('#port_2').fadeIn(1100);
-  // $('#contact').hide("scale", 1000);
+  $('#more').fadeIn(1100);
+  $('#port_3').hide("scale", 800);
+  $('#port_4').hide("scale", 800);
+  $('.ui-dialog').hide("scale", 800);
+}
+
+function show_port_2(){
+  $('#port_1').hide("scale", 800);
+  $('#port_2').hide("scale", 800);
+  $('.ui-dialog').hide("scale", 800);
+  $('#port_3').fadeIn(1100);
+  $('#port_4').fadeIn(1100);
+  $('#more').hide();
+  $('#original').fadeIn(900);
 }
 
 function about(){
   $('#port_1').hide("scale", 800);
   $('#port_2').hide("scale", 800);
-  // $('#contact').hide("scale", 1000);
-  $('.intro').show("scale", 1000);
   $('.ui-dialog').hide("scale", 800);
+  $('#port_3').hide("scale", 800);
+  $('#port_4').hide("scale", 800);
+  $('#more').hide();
+  $('#original').hide();
+  $('.intro').show("scale", 1000);
 }
 
-// function contact() {
-//   $('#port_1').hide("scale", 1000);
-//   $('#port_2').hide("scale", 1000);
-//   $('.ui-dialog').hide("scale", 1000);
-//   $('.intro').hide("scale", 1000);
-//   $("#contact").fadeIn(1000);
-// }
 
 $(document).ready(function(){
   $('#ouac_screenshot').attr('src', "images/ouac-screenshot.png");  
@@ -32,9 +42,21 @@ $(document).ready(function(){
   $('#portfolio_nav').on('click', show_port1);
   $('#about_nav').on('click', about);
   $('#name').on('click', about);
+  $('#more').on('click', show_port_2);
+  $('#original').on('click', show_port1);
   
+  $("#dialog_ouac").dialog({autoOpen: false});
+  $("#ouac_screenshot").on('mouseover', function(){   
+    $("#dialog_ouac").dialog( "close"); 
+    $("#dialog_ouac").dialog( "option", "position", { my: "left top", at: "left bottom", of: $("#ouac_screenshot") } );
+    $("#dialog_ouac").dialog( "open");
+  });
+  $("#dialog_ouac").on('mouseleave', function(){
+    $("#dialog_ouac").dialog( "close");
+  });
+
+
   $("#dialog_cupcake").dialog({autoOpen: false});
-  // $("#dialog_cupcake").dialog({ position: {my: "center bottom", at: "center top", of: "#cupcake_screenshot"}});
   $("#cupcake_screenshot").on('mouseover', function(){   
     $("#dialog_cupcake").dialog( "close"); 
     $("#dialog_cupcake").dialog( "option", "position", { my: "left top", at: "left bottom", of: $("#cupcake_screenshot") } );
@@ -53,6 +75,16 @@ $(document).ready(function(){
   $("#dialog_worldcup").on('mouseleave', function(){
     $("#dialog_worldcup").dialog("close");
   });
+
+  $("#dialog_simplechat").dialog({autoOpen: false});
+  $("#simplechat_screenshot").on('mouseover', function(){
+    $("#dialog_simplechat").dialog( "close"); 
+    $("#dialog_simplechat").dialog( "option", "position", { my: "left top", at: "left bottom", of: $("#simplechat_screenshot") } );
+    $("#dialog_simplechat").dialog("open");
+  });
+  $("#dialog_simplechat").on('mouseleave', function(){
+    $("#dialog_simplechat").dialog("close");
+  });  
 
 
   // $('#big-image').attr('src', 'http://www.nasa.gov/centers/goddard/images/content/433226main_Misti_ComaCluster.jpg');
