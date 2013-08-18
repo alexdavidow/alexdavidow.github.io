@@ -1,5 +1,6 @@
 function show_port1(){
   $('.intro').hide("scale", 800);
+  $('#skills').hide("scale", 800);
   $('#original').hide();
   $('#port_1').fadeIn(1100);
   $('#port_2').fadeIn(1100);
@@ -28,6 +29,7 @@ function about(){
   $('#more').hide();
   $('#original').hide();
   $('.intro').show("scale", 1000);
+  $('#skills').show("scale", 1000);
 }
 
 

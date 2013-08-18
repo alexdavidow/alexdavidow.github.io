@@ -80,7 +80,6 @@ h5 {
 }
 
 
-
 #bg_image {
   /*removed position absolute b/c it was hiding elements below and taking over site*/
   position: absolute;
@@ -111,6 +110,15 @@ h5 {
   color: white;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-weight: bold;
+}
+
+#skills{
+  width: 500px;
+  height: 150px;
+  color: #254763;
+  position: absolute;
+  left: 720px;
+  top: 220px;
 }
 
 #contact {
