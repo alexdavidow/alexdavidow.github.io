@@ -36,7 +36,7 @@ function about(){
 $(document).ready(function(){
   $('#ouac_screenshot').attr('src', "images/ouac_screenshot.jpg");  
   $('#cupcake_screenshot').attr('src', "images/cupcakegame_screenshot.jpg");
-  $('#worldcup_screenshot').attr('src', "images/worldcupapp_screenshot.jpg");
+  $('#worldcup_screenshot').attr('src', "images/worldcup_screenshot.jpg");
   $('#simplechat_screenshot').attr('src', "images/simplechat_screenshot.jpg");
   
   $('.hidden').hide();
