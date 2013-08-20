@@ -34,10 +34,10 @@ function about(){
 
 
 $(document).ready(function(){
-  $('#ouac_screenshot').attr('src', "images/ouac-screenshot.png");  
-  $('#cupcake_screenshot').attr('src', "images/cupcakegame_screenshot.png");
-  $('#worldcup_screenshot').attr('src', "images/worldcupapp_screenshot.png");
-  $('#simplechat_screenshot').attr('src', "images/simplechat_screenshot.png");
+  $('#ouac_screenshot').attr('src', "images/ouac_screenshot.jpg");  
+  $('#cupcake_screenshot').attr('src', "images/cupcakegame_screenshot.jpg");
+  $('#worldcup_screenshot').attr('src', "images/worldcupapp_screenshot.jpg");
+  $('#simplechat_screenshot').attr('src', "images/simplechat_screenshot.jpg");
   
   $('.hidden').hide();
   
